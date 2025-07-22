@@ -88,13 +88,14 @@ app.get('/employee', authMiddleware, async (req, res) => {
 
 
 app.post('/employee', authMiddleware, async (req, res) => {
-  const { name, email, department, phone, address } = req.body
+  const { name, email, department, phone, address , status} = req.body
   const employee = await EmployeeController.create({
     name,
     email,
     department,
     phone,
-    address
+    address,
+    status
   })
 
   res.status(200).json({ data: employee, success: true })

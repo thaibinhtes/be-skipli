@@ -20,9 +20,21 @@ yarn install
 npm install
 ```
 
-#Chạy dự án (Development)
+
+## **Chạy dự án (Development)**
 ```bash
 yarn start
 # hoặc
 npm start
+```
+
+## **Cấu trúc thư mục**
+```bash
+modules/
+  firebaseConfig.js          # Cấu hình Firebase, DB
+  email.js     # Cấu hình email
+controllers/ #quản lý các controllers
+middlewares/ # Middleware
+index.js #file main
+
 ```

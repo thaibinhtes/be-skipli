@@ -21,7 +21,6 @@ class EmployeeModel {
 
   async create(data) {
     const colRef = collection(db, this.collectionName);
-    console.log(data)
     const docRef = await addDoc(colRef, data);
     return docRef.id;
   }
