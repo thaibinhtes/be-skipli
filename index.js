@@ -57,7 +57,7 @@ app.post('/verify-otp', async (req, res) => {
       return res.json({ success: false, message: "OTP không đúng." });
     }
 
-    const timeout = 60 * 1000
+    const timeout = 5 * 60 * 1000
 
     if (Date.now() > data.expiresAt + timeout) {
       return res.json({ success: false, message: "OTP đã hết hạn." });
