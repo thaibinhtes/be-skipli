@@ -24,5 +24,5 @@ npm install
 ```bash
 yarn start
 # hoặc
-npm run start
+npm start
 ```
